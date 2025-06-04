@@ -21,7 +21,7 @@
             "email": "meeeet.dev@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "razorpay/razorpay": "^2.0"
     },
