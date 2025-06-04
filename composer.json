@@ -1,0 +1,33 @@
+{
+    "name": "violet-waves/bagisto-razorpay",
+    "description": "Razorpay payment gateway for bagisto laravel open source ecommerce platform.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "VioletWaves\\Razorpay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VioletWaves\\Razorpay\\Providers\\RazorpayServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "authors": [
+        {
+            "name": "Meeeet Dev",
+            "email": "meeeet.dev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "razorpay/razorpay": "^2.0"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php artisan vendor:publish --tag=public --force"
+        ]
+    }
+}
