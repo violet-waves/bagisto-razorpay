@@ -30,7 +30,7 @@ class Razorpay extends Payment
             $this->setCart();
         }
 
-        return $this->getConfigData('active') && $this->cart?->haveStockableItems();
+        return $this->getConfigData('active');
     }
 
     /**
@@ -43,6 +43,5 @@ class Razorpay extends Payment
         $url = $this->getConfigData('image');
 
         return $url ? Storage::url($url) : '';
-        
     }
 }
